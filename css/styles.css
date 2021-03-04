@@ -10,6 +10,8 @@
   --logo-black-theme: #000;
   --logo-white-theme: #fff; 
   --btn-background: #F5F4FA;
+  --section-pt: 47px;
+  --section-pb: 47px;
   
 }
 
@@ -74,6 +76,7 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  border-color: var(--main-bgr-color);
 }
 
 .header .container {
@@ -94,6 +97,9 @@ img {
 }
 
 .logo-black-item {
+
+margin-right: o;
+
 font-family: var(--secondary-font);
 color: var(--logo-black-theme);
 }
@@ -116,9 +122,6 @@ color: var(--logo-white-theme);
 
 .nav-link {
 
-  margin-left: auto;
-  margin-right: 50px;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -140,6 +143,7 @@ color: var(--logo-white-theme);
 }
 
 .contact-list {
+  margin-left: auto;
 
   display: flex;
   align-items: center;
@@ -149,19 +153,16 @@ color: var(--logo-white-theme);
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
- .mail-link {
-   margin-left: auto;
-   margin-right: 50px;
- }
+
+
+ .contact-list .contact-item:not(:last-child) {
+  margin-right: 50px;
+} 
+
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
 }
-
-/* .tel-link {
-  margin-right: auto;
-  margin-left: 50px;
-} */
 
 .tel-link:hover,
 .tel-link:focus {
@@ -173,29 +174,43 @@ color: var(--logo-white-theme);
 
 
 .hero {
-    background-color: var(--secondary-bgr-color);
-}
+
+ background-color: var(--secondary-bgr-color);
+ text-align: center;
+ }
+
 .hero-title {
 
+  max-width: 696px;
+  margin: auto;
   margin-bottom: 30px;
-  
-
+  padding-top: 200px;
+ 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
 }
 .modal-btn {
+ 
+  min-width: 136;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 200px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1, 87;
-  display: flex;
+  
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--white-text-color);
@@ -226,6 +241,35 @@ font-size: 14px
 line-height: 1.7;
 color: var(main-text-color);
 }
+
+/* ==========ADVANTEGES====== */
+
+
+.advantages {
+
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  
+  background-color: var(--main-bgr-color);
+}
+
+
+.title-item {
+
+  margin-bottom: 10px;
+}
+
+.advantages-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - 30px) / 4);
+  margin-left: 30px;
+}
+
+
 
 /* =======FOOTER======== */
 
