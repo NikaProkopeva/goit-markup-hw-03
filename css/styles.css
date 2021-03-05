@@ -45,6 +45,7 @@ img {
 .link {
   text-decoration: none;
   color:  inherit;
+  display: block;
 }
 .list {
   list-style: none;
@@ -386,9 +387,6 @@ color: var(main-text-color);
    margin-bottom: 39px;
 
 }
-
-
-
 .portfolio-btn-list .btn-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -434,11 +432,15 @@ font-size: 18px;
 line-height: 2;
 }
 
-.examples-title {
-
+.examples-item {
 flex-basis: calc(100% / 3 - 30px);
 margin-left: 30px;
 margin-top: 30px;
+}
+
+.examples-title {
+
+margin-bottom: 4px;
 
 font-weight: 700;
 letter-spacing: 0.06em;
@@ -452,4 +454,8 @@ color: var(--main-text-color);
 .desc-box {
   border: 1px solid #eee;
   border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
