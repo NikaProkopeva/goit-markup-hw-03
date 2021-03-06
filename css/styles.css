@@ -70,8 +70,6 @@ img {
 /* ===========HEADER========== */
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-color: var(--main-bgr-color);
   border: 1px solid #eee;
   border-top: none;
@@ -116,6 +114,9 @@ img {
 }
 
 .nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -185,7 +186,7 @@ img {
 }
 .modal-btn {
   display: block;
-  min-width: 136;
+  min-width: 136px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -217,7 +218,7 @@ img {
 }
 
 .about-us-title {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -225,7 +226,7 @@ img {
   color: var(--secondary-text-color);
 }
 .title-item {
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -289,6 +290,8 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  border: 1px solid #eee;
+  border-top: none;
 }
 .member .title-item {
   margin-bottom: 10px;
@@ -309,6 +312,10 @@ img {
 .address {
   font-style: normal;
   margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.address > .link:nth-child(-n + 2) {
   margin-bottom: 9px;
 }
 
